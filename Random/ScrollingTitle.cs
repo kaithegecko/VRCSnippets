@@ -32,6 +32,7 @@ namespace VRCSnippets
     {
         if (string.IsNullOrEmpty(CutTitle)) CutTitle = FullTitle;
         CutTitle = CutTitle.Remove(0, 1);
-        SetTitles(CutTitle);
+        Console.Title = CutTitle;
+        SetWindowText(windowPtr, CutTitle);
     }
 }
